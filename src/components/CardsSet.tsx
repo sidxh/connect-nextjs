@@ -10,22 +10,23 @@ const CardsSet = () => {
   const router = useRouter();
   const { category, skill } = router.query;
 
+  console.log('Category:', category);
+  console.log('Skill:', skill);
+
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        if (typeof category === 'string') {
-          const response = await axios.get(`https://connectlnm-backend.onrender.com/${category}`);
-          setData(response.data);
-        }
+        const response = await axios.get(`https://connectlnm-backend.onrender.com/${category}`);
+        setData(response.data);
         setIsLoading(false);
       } catch (error) {
         console.error(error);
       }
     };
-
+  
     fetchData();
   }, [category]);
 
@@ -34,7 +35,7 @@ const CardsSet = () => {
       typeof skillData.category === 'string' &&
       typeof category === 'string' &&
       skillData.category.toLowerCase() === category.toLowerCase() &&
-      skillData.skill.toLowerCase() === (skill as string).toLowerCase()
+      skillData.skill.toLowerCase() === skill.toLowerCase()
   );
 
   if (specificData.length === 0) {
