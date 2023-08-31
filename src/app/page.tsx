@@ -1,8 +1,8 @@
 'use client'
 import React, { useCallback } from 'react';
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import particlesOptions from "./particles.json";
+// import Particles from "react-particles";
+// import { loadFull } from "tsparticles";
+// import particlesOptions from "./particles.json";
 import Link from 'next/link';
 import Image from 'next/image';
 import Logos from '../../public/logos.png'
@@ -13,7 +13,7 @@ export default function Home() {
 }, [])
     return (
       <div className="absolute top-0 left-0 w-full h-full landing">
-            <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/>
+            {/* <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/> */}
             <div className='flex flex-col mx-[22vw] my-[28vh] p-[2rem]'>
               <div className='flex items-center'>
                 <Image alt='' src={Logos} className='w-[11rem]' />
