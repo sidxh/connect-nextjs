@@ -8,9 +8,9 @@ import Image from 'next/image';
 import Logos from '../../public/logos.png'
 
 export default function Home() {
-  const particlesInit = useCallback(main => {
-    loadFull(main);
-}, [])
+//   const particlesInit = useCallback(main => {
+//     loadFull(main);
+// }, [])
     return (
       <div className="absolute top-0 left-0 w-full h-full landing">
             {/* <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/> */}
