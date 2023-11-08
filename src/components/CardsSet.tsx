@@ -9,9 +9,8 @@ const CardsSet = () => {
   const router = useRouter();
   const { category, skill } = router.query;
 
-  // Wrap the useState hook with useClient to make it compatible with Server Components
-  const [data, setData] = React.useClientState([]);
-  const [isLoading, setIsLoading] = React.useClientState(true);
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,7 +44,7 @@ const CardsSet = () => {
           <h1>No Data Yet</h1>
           <p>
             We are working on expanding and scaling our database which is currently facing some non-technical issues.
-            Hopefully we&apos;ll get it resolved ASAP. Meanwhile, you can check all of other domains!
+            Hopefully, we'll get it resolved ASAP. Meanwhile, you can check all of the other domains!
           </p>
         </div>
       </div>
