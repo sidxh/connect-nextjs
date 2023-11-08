@@ -5,18 +5,31 @@ import NoData from '../../public/no-data.png';
 import { useRouter } from 'next/router';
 import Cards from './Cards';
 
+interface YourType {
+  // Define the type structure of your objects here
+  category: string;
+  skill: string;
+  name: string;
+  skillset: string;
+  experience: string;
+  achievement: string;
+  rollno: string;
+  linkedin: string;
+  email: string;
+}
+
 const CardsSet = () => {
   const router = useRouter();
   const { category, skill } = router.query;
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<YourType[]>([]); // Specify the type of data as YourType[]
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         if (typeof category === 'string') {
-          const response = await axios.get(`https://connectlnm-backend.onrender.com/${category}`);
+          const response = await axios.get<YourType[]>(`https://connectlnm-backend.onrender.com/${category}`);
           setData(response.data);
         }
         setIsLoading(false);
@@ -28,13 +41,15 @@ const CardsSet = () => {
     fetchData();
   }, [category]);
 
-  const specificData = data.filter(
-    (skillData) =>
-      typeof skillData.category === 'string' &&
-      typeof category === 'string' &&
-      skillData.category.toLowerCase() === category.toLowerCase() &&
-      skillData.skill.toLowerCase() === (skill as string).toLowerCase()
-  );
+  const specificData = data
+    .filter((skillData) => typeof skillData === 'object')
+    .filter(
+      (skillData) =>
+        typeof skillData.category === 'string' &&
+        typeof category === 'string' &&
+        skillData.category.toLowerCase() === category.toLowerCase() &&
+        skillData.skill.toLowerCase() === (skill as string).toLowerCase()
+    ) as YourType[];
 
   if (specificData.length === 0) {
     return (
