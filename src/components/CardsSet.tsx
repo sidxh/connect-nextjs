@@ -60,7 +60,7 @@ const CardsSet = () => {
           <h1>No Data Yet</h1>
           <p>
             We are working on expanding and scaling our database which is currently facing some non-technical issues.
-            Hopefully, we'll get it resolved ASAP. Meanwhile, you can check all of the other domains!
+            Hopefully, we&apos;ll get it resolved ASAP. Meanwhile, you can check all of the other domains!
           </p>
         </div>
       </div>
