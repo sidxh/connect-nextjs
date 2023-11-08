@@ -177,32 +177,32 @@ const faqs = [
     }
 ]
 
-const AccordionItem = (props:any) => {
-    const contentEl = useRef();
+const AccordionItem = (props: any) => {
+    const contentEl = useRef<HTMLDivElement>(null); // Specify the type of the ref
     const { handlehrefggle, active, faq } = props;
     const { header, id, text } = faq;
-
+  
     return (
-        <div className="border-[1px] border-[#ddd] rounded-[5px] mb-[10px] overflow-hidden last:mb-0">
-            <div className="">
-                <div className={`rc-accordion-toggle flex justify-between items-start cursor-pointer p-3 ${active === id ? 'active' : ''}`} onClick={() => handlehrefggle(id)}>
-                    <h5 className="rc-accordion-title font-bold text-[1rem] relative mb-0 text-[#b3ceee] p-2">{header}</h5>
-                    <i className="fa fa-chevron-down relative top-[2px] text-white text-[12px] rc-accordion-icon"></i>
-                </div>
-            </div>
-            <div ref={contentEl} className={`rc-collapse ${active === id ? 'show' : ''}`} style={
-                active === id
-                    ? { height: contentEl.current.scrollHeight }
-                    : { height: "0px" }
-            }>
-                <div className="p-[15px]">
-                    <p className='mb-0 text-[1.3rem]'>{text}</p>
-                </div>
-            </div>
+      <div className="border-[1px] border-[#ddd] rounded-[5px] mb-[10px] overflow-hidden last:mb-0">
+        <div className="">
+          <div className={`rc-accordion-toggle flex justify-between items-start cursor-pointer p-3 ${active === id ? 'active' : ''}`} onClick={() => handlehrefggle(id)}>
+            <h5 className="rc-accordion-title font-bold text-[1rem] relative mb-0 text-[#b3ceee] p-2">{header}</h5>
+            <i className="fa fa-chevron-down relative top-[2px] text-white text-[12px] rc-accordion-icon"></i>
+          </div>
         </div>
+        <div ref={contentEl} className={`rc-collapse ${active === id ? 'show' : ''}`} style={
+          active === id
+            ? { height: contentEl.current?.scrollHeight }
+            : { height: "0px" }
+        }>
+          <div className="p-[15px]">
+            <p className='mb-0 text-[1.3rem]'>{text}</p>
+          </div>
+        </div>
+      </div>
     )
-}
-
+  }
+  
 const DetailSidebar = () => {
     const [active, setActive] = useState(null);
 
