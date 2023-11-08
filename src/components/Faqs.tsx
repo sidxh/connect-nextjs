@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, RefObject } from 'react';
 import Link from 'next/link';
 
 const faqs = [
@@ -64,7 +64,7 @@ const faqs = [
 ];
 
 const AccordionItem = (props: any) => {
-  const contentEl = useRef();
+  const contentEl: RefObject<HTMLDivElement> = useRef<HTMLDivElement>(null);
   const { handleToggle, active, faq } = props;
   const { header, id, text } = faq;
 
@@ -79,7 +79,7 @@ const AccordionItem = (props: any) => {
       <div
         ref={contentEl}
         className={`rc-collapse ${active === id ? 'show' : ''}`}
-        style={active === id ? { height: contentEl.current.scrollHeight } : { height: '0px' }}
+        style={active === id ? { height: contentEl.current?.scrollHeight } : { height: '0px' }}
       >
         <div className="m-[2rem] leading-[24px]">
           <p className="mb-0">{text}</p>
@@ -90,7 +90,7 @@ const AccordionItem = (props: any) => {
 };
 
 const DetailSidebar = () => {
-  const [active, setActive] = useState(null);
+  const [active, setActive] = useState<number | null>(null);
 
   const handleToggle = (index: any) => {
     if (active === index) {
