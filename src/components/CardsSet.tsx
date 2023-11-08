@@ -9,8 +9,9 @@ const CardsSet = () => {
   const router = useRouter();
   const { category, skill } = router.query;
 
-  const [data, setData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  // Wrap the useState hook with useClient to make it compatible with Server Components
+  const [data, setData] = React.useClientState([]);
+  const [isLoading, setIsLoading] = React.useClientState(true);
 
   useEffect(() => {
     const fetchData = async () => {
