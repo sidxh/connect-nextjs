@@ -1,12 +1,16 @@
-import React from 'react'
-import DetailedSidebar from '@/components/DetailedSidebar'
-import CardsSet from '@/components/CardsSet'
+import React from 'react';
+import DetailedSidebar from '@/components/DetailedSidebar';
+import CardsSet from '@/components/CardsSet';
+import SkillLayout from './layout';
 
-export default function SkillsPage() {
+const SkillPage = () => {
   return (
-    <div className='flex justify-around mb-[10rem]'>
+      <div className='flex justify-around mb-[10rem]'>
         <DetailedSidebar />
         <CardsSet />
-    </div>
-  )
-}
+      </div>
+  );
+};
+
+export default SkillPage;
+

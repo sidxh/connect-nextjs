@@ -1,9 +1,10 @@
-"use client"
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import axios from 'axios';
 import NoData from '../../public/no-data.png';
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation'; // Change the import statement
 import Cards from './Cards';
 
 interface YourType {
@@ -20,8 +21,7 @@ interface YourType {
 }
 
 const CardsSet = () => {
-  const router = useRouter();
-  const { category, skill } = router.query;
+  const { category, skill } = useParams(); // Use useParams instead of useRouter
 
   const [data, setData] = useState<YourType[]>([]); // Specify the type of data as YourType[]
   const [isLoading, setIsLoading] = useState(true);
