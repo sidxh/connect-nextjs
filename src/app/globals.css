@@ -300,3 +300,71 @@ canvas {
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,116,139,1) 100%, rgba(255,255,255,1) 100%);
 }
+
+/* Carousel Speciifc */
+
+.slick-slider .slick-dots li button:before {
+  color: #ffffff; /* Set the desired color for the dots */
+}
+
+/* Change the color of the active dot */
+.slick-slider .slick-dots li.slick-active button:before {
+  color:#39B3E9; /* Set the desired color for the active dot */
+}
+
+.slick-slider>.slick-prev {
+  left: -40px;
+}
+
+.slick-slider>.slick-prev:before{
+font-size: 40px;
+}
+
+.slick-slider>.slick-next {
+right: -40px;
+}
+
+.slick-slider>.slick-next:before{
+font-size: 40px;
+}
+
+.slick-slider .slick-dots li button:before{
+font-size: 15px;
+}
+
+.slick-slider .slick-dots{
+position: absolute;
+bottom: -60px;
+}
+
+.link_hai {
+position: relative;
+}
+
+.link_hai > img {
+border: 2px solid transparent;
+transition: opacity 0.3s ease;
+}
+
+.link_hai:hover > img {
+opacity: 0.2;
+}
+
+.link_hai:hover .overlay {
+  opacity: 1;
+}
+
+.link_hai .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}

@@ -58,13 +58,15 @@ const Carousel = (props:any) => {
     
       return (
         <div className="carousel_cont">
-          <h1>{props.title}</h1>
+          <h1 className='font-bold my-16 text-[2rem]'>{props.title}</h1>
           <Slider {...settings}>
             <Link className='link_hai' href={props.url1}>
               {/* <img src={require(`../images/domains/${props.img1}`)} alt="" data-skill-name={props.dataimg1} /> */}
               <Image
-                src={`/images/domains/${props.img1}`}
+                src={`/domains/${props.img1}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg1}</div>
               
@@ -72,8 +74,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url2}>
               {/* <img src={require(`../images/domains/${props.img2}`)} alt="" data-skill-name={props.dataimg2} /> */}
               <Image
-                src={`/images/domains/${props.img2}`}
+                src={`/domains/${props.img2}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg2}</div>
               
@@ -81,8 +85,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url3}>
               {/* <img src={require(`../images/domains/${props.img3}`)} alt="" data-skill-name={props.dataimg3} /> */}
               <Image
-                src={`/images/domains/${props.img3}`}
+                src={`/domains/${props.img3}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg3}</div>
               
@@ -90,8 +96,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url4}>
               {/* <img src={require(`../images/domains/${props.img4}`)} alt="" data-skill-name={props.dataimg4} /> */}
               <Image
-                src={`/images/domains/${props.img4}`}
+                src={`/domains/${props.img4}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg4}</div>
               
@@ -99,8 +107,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url5}>
               {/* <img src={require(`../images/domains/${props.img5}`)} alt="" data-skill-name={props.dataimg5} /> */}
               <Image
-                src={`/images/domains/${props.img5}`}
+                src={`/domains/${props.img5}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg5}</div>
               
@@ -108,8 +118,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url6}>
               {/* <img src={require(`../images/domains/${props.img6}`)} alt="" data-skill-name={props.dataimg6} /> */}
               <Image
-                src={`/images/domains/${props.img6}`}
+                src={`/domains/${props.img6}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg6}</div>
               
@@ -117,8 +129,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url7}>
               {/* <img src={require(`../images/domains/${props.img7}`)} alt="" data-skill-name={props.dataimg7} /> */}
               <Image
-                src={`/images/domains/${props.img7}`}
+                src={`/domains/${props.img7}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg7}</div>
               
@@ -126,8 +140,10 @@ const Carousel = (props:any) => {
             <Link className='link_hai' href={props.url8}>
               {/* <img src={require(`../images/domains/${props.img8}`)} alt="" data-skill-name={props.dataimg8} /> */}
               <Image
-                src={`/images/domains/${props.img8}`}
+                src={`/domains/${props.img8}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg8}</div>
               
@@ -135,8 +151,10 @@ const Carousel = (props:any) => {
             {props.img9 && <Link className='link_hai' href={props.url9}>
               {/* <img src={require(`../images/domains/${props.img9}`)} alt="" data-skill-name={props.dataimg9} /> */}
               <Image
-                src={`/images/domains/${props.img9}`}
+                src={`/domains/${props.img9}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg9}</div>
               
@@ -144,8 +162,10 @@ const Carousel = (props:any) => {
             {props.img10 && <Link className='link_hai' href={props.url10}>
               {/* <img src={require(`../images/domains/${props.img10}`)} alt="" data-skill-name={props.dataimg10} /> */}
               <Image
-                src={`/images/domains/${props.img10}`}
+                src={`/domains/${props.img10}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg10}</div>
               
@@ -153,8 +173,10 @@ const Carousel = (props:any) => {
             {props.img11 && <Link className='link_hai' href={props.url11}>
               {/* <img src={require(`../images/domains/${props.img11}`)} alt="" data-skill-name={props.dataimg11} /> */}
               <Image
-                src={`/images/domains/${props.img11}`}
+                src={`/domains/${props.img11}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg11}</div>
               
@@ -162,8 +184,10 @@ const Carousel = (props:any) => {
             {props.img12 && <Link className='link_hai' href={props.url12}>
               {/* <img src={require(`../images/domains/${props.img12}`)} alt="" data-skill-name={props.dataimg12} /> */}
               <Image
-                src={`/images/domains/${props.img12}`}
+                src={`/domains/${props.img12}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg12}</div>
               
@@ -171,8 +195,10 @@ const Carousel = (props:any) => {
             {props.img13 && <Link className='link_hai' href={props.url13}>
               {/* <img src={require(`../images/domains/${props.img13}`)} alt="" data-skill-name={props.dataimg13} /> */}
               <Image
-                src={`/images/domains/${props.img13}`}
+                src={`/domains/${props.img13}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg13}</div>
               
@@ -180,8 +206,10 @@ const Carousel = (props:any) => {
             {props.img14 && <Link className='link_hai' href={props.url14}>
               {/* <img src={require(`../images/domains/${props.img14}`)} alt="" data-skill-name={props.dataimg14} /> */}
               <Image
-                src={`/images/domains/${props.img14}`}
+                src={`/domains/${props.img14}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg14}</div>
               
@@ -189,8 +217,10 @@ const Carousel = (props:any) => {
             {props.img15 && <Link className='link_hai' href={props.url15}>
               {/* <img src={require(`../images/domains/${props.img15}`)} alt="" data-skill-name={props.dataimg15} /> */}
               <Image
-                src={`/images/domains/${props.img15}`}
+                src={`/domains/${props.img15}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg15}</div>
               
@@ -198,8 +228,10 @@ const Carousel = (props:any) => {
             {props.img16 && <Link className='link_hai' href={props.url16}>
               {/* <img src={require(`../images/domains/${props.img16}`)} alt="" data-skill-name={props.dataimg16} /> */}
               <Image
-                src={`/images/domains/${props.img16}`}
+                src={`/domains/${props.img16}`}
                 alt=""
+                width={210}
+                height={400}
                 />
               <div className="overlay">{props.dataimg16}</div>
               
