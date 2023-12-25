@@ -7,6 +7,11 @@ const Cards = (props:any) => {
     setActiveTab(tab);
   };
 
+  const trimText = (text: string | undefined, maxLength: number) => {
+    if (!text) return ''; // Return an empty string if text is undefined or null
+    return text.length > maxLength ? text.substring(0, maxLength) + '...' : text;
+  };
+
   return (
     <div className="rounded-[2rem] flex flex-col justify-around text-[#ecfee8] hover:scale-[1.05] cards_component">
       <h1 className='text-[1.5rem] mt-[2rem] text-center'>{props.name}</h1>
@@ -28,14 +33,13 @@ const Cards = (props:any) => {
       <div className="">
         {activeTab === 'experience' && (
           <div>
-            {/* Render experience content here */}
             <ul className='exp_ul'>
               <li>Technical Skillset</li>
-              <span><button>{props.skillset}</button></span>
+              <span><button>{trimText(props.skillset, 30)}</button></span> {/* Change the trim size as needed */}
               <li>Experience</li>
-              <span><button>{props.experience}</button></span>
+              <span><button>{trimText(props.experience, 55)}</button></span> {/* Change the trim size as needed */}
               <li>Achievements</li>
-              <span><button>{props.achievement}</button></span>
+              <span><button>{trimText(props.achievement, 55)}</button></span> {/* Change the trim size as needed */}
             </ul>
           </div>
         )}
@@ -52,7 +56,7 @@ const Cards = (props:any) => {
           </div>
         )}
       </div>
-      </div>
+    </div>
   );
 };
 
