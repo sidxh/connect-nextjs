@@ -20,7 +20,7 @@ export default function Home() {
             {/* <img className="logos" src={require('../logos.png')} alt='' /> */}
           <div className="flex flex-col text-white">
               <h1 className='main-text-h1 font-semibold text-[96px]'>ConnectLNM</h1>
-              <p className='ml-[3%] text-[#949494] text-[25px]' id="landing-p-desk">Upskill By Harnessing the Power of Community!!</p>
+              <p className='ml-[3%] text-[#949494] text-[25px]' id="landing-p-desk">Upskill By Harnessing the Power of Community!</p>
         </div>
     </div>
     <p className="hidden">Upskill By Harnessing the Power of Community!</p>

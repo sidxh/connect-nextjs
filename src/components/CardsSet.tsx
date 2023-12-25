@@ -1,3 +1,5 @@
+// components/CardSet.tsx
+
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -21,22 +23,25 @@ interface YourType {
 }
 
 const CardsSet = () => {
-  const { category, skill } = useParams(); // Use useParams instead of useRouter
+  const { category, skill } = useParams();
+  console.log('URL Params - Category:', category, 'Skill:', skill); // Log URL parameters
 
-  const [data, setData] = useState<YourType[]>([]); // Specify the type of data as YourType[]
+  const [data, setData] = useState<YourType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         if (typeof category === 'string') {
-          const response = await axios.get<YourType[]>(`https://connectlnm-backend.onrender.com/${category}`);
+          const response = await axios.get<YourType[]>(`https://connectlnm-backend.onrender.com/${category}`)
+          console.log('API Response Data:', response.data); // Log data received from the API
           setData(response.data);
         }
         setIsLoading(false);
       } catch (error) {
-        console.error(error);
+        console.error('API Request Error:', error); // Log any error from the API request
       }
+      setIsLoading(false);
     };
 
     fetchData();
@@ -51,6 +56,13 @@ const CardsSet = () => {
         skillData.category.toLowerCase() === category.toLowerCase() &&
         skillData.skill.toLowerCase() === (skill as string).toLowerCase()
     ) as YourType[];
+
+  console.log('Filtered Specific Data:', specificData); // Log the filtered specific data
+
+    // Render loading UI
+    if (isLoading) {
+      return <div>Loading...</div>; // Replace with your loading UI
+    }
 
   if (specificData.length === 0) {
     return (
