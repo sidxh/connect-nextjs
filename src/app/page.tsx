@@ -12,9 +12,9 @@ export default function Home() {
 //     loadFull(main);
 // }, [])
     return (
-      <div className="absolute top-0 left-0 h-full landing w-[100vh] sm:w-full ">
+      <div className="absolute top-0 left-0 landing w-[100vw] sm:w-full ">
             {/* <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/> */}
-            <div className='flex flex-col mx-[10vw] sm:mx-[22vw] my-[40vh] sm:my-[28vh] sm:p-[2rem] items-center '>
+            <div className='flex flex-col mx-[10vw] sm:mx-[22vw] my-[45vh] sm:my-[28vh] sm:p-[2rem] items-center '>
               <div className='flex items-center'>
                 <Image alt='' src={Logos} className='w-[4rem] sm:w-[11rem]' />
             {/* <img className="logos" src={require('../logos.png')} alt='' /> */}
