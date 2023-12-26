@@ -33,25 +33,25 @@ const Cards = (props:any) => {
       <div className="">
         {activeTab === 'experience' && (
           <div>
-            <ul className='exp_ul'>
-              <li>Technical Skillset</li>
-              <span><button>{trimText(props.skillset, 30)}</button></span> {/* Change the trim size as needed */}
-              <li>Experience</li>
-              <span><button>{trimText(props.experience, 55)}</button></span> {/* Change the trim size as needed */}
-              <li>Achievements</li>
-              <span><button>{trimText(props.achievement, 55)}</button></span> {/* Change the trim size as needed */}
+            <ul className='list-none my-[1.5rem] mx-[1rem] text-left'>
+              <li className='text-blue-200 text-lg font-bold my-4'>Technical Skillset</li>
+              <span className='text-[0.85rem]'><button className='text-black py-1 px-2 rounded-full border border-black bg-white'>{trimText(props.skillset, 30)}</button></span> {/* Change the trim size as needed */}
+              <li className='text-blue-200 text-lg font-bold my-4'>Experience</li>
+              <span className='text-[0.85rem]'><button className='text-black py-1 px-2 rounded-full border border-black bg-white'>{trimText(props.experience, 55)}</button></span> {/* Change the trim size as needed */}
+              <li className='text-blue-200 text-lg font-bold my-4'>Achievements</li>
+              <span className='text-[0.85rem]'><button className='text-black py-1 px-2 rounded-full border border-black bg-white'>{trimText(props.achievement, 55)}</button></span> {/* Change the trim size as needed */}
             </ul>
           </div>
         )}
         {activeTab === 'contact' && (
           <div className='my-[1rem] mx-0'>
-            <ul className='exp_ul'>
-              <li>Roll Number</li>
-              <span><button>{props.rollno}</button></span>
-              <li>LinkedIn Handle</li>
-              <span><a href={props.linkedin} target='_blank' rel="noreferrer">LinkedIn</a></span>
-              <li>Email ID</li>
-              <span><a href={props.email} target='_blank' rel="noreferrer">Email ID</a></span>
+            <ul className='list-none my-[1.5rem] mx-[1rem] text-left'>
+              <li className='text-blue-200 text-lg font-bold my-4'>Roll Number</li>
+              <span className='text-[0.85rem]'><button className='text-black py-1 px-2 rounded-full border border-black bg-white'>{props.rollno}</button></span>
+              <li className='text-blue-200 text-lg font-bold my-4'>LinkedIn Handle</li>
+              <span className='text-[0.85rem]'><a className='text-black py-2 px-3 rounded-full border border-black bg-white' href={props.linkedin} target='_blank' rel="noreferrer">LinkedIn</a></span>
+              <li className='text-blue-200 text-lg font-bold my-4'>Email ID</li>
+              <span className='text-[0.85rem]'><a className='text-black py-2 px-3 rounded-full border border-black bg-white' href={props.email} target='_blank' rel="noreferrer">Email ID</a></span>
             </ul>
           </div>
         )}

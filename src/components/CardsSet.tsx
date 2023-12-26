@@ -10,7 +10,7 @@ import { useParams } from 'next/navigation'; // Change the import statement
 import Cards from './Cards';
 
 const Loader = () => (
-  <div className="loader">
+  <div className="fixed w-full h-full flex justify-center items-center left-0 top-0">
     <svg className="pl" viewBox="0 0 128 128" width="128px" height="128px" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="pl-grad" x1="0" y1="0" x2="0" y2="1">
@@ -36,6 +36,13 @@ interface YourType {
   linkedin: string;
   email: string;
 }
+
+const formatSkillName = (skillName: string) => {
+  return skillName
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
 
 const CardsSet = () => {
   const { category, skill } = useParams();
@@ -97,13 +104,13 @@ const CardsSet = () => {
 
   return (
     <div className='text-center mb-[3rem] mx-0'>
-      <h1 className='text-[2rem] font-bold mb-[3rem]'>{firstSkill.skill}</h1>
+      <h1 className='text-[2rem] font-bold mb-[3rem]'>{formatSkillName(firstSkill.skill)}</h1>
       <div className='grid grid-cols-3 gap-[2rem] w-[70vw] p-[2rem]'>
         {specificData.map((specificData, index) => (
           <Cards
             key={index}
             name={specificData.name}
-            skill={specificData.skill}
+            skill={formatSkillName(firstSkill.skill)}
             skillset={specificData.skillset}
             experience={specificData.experience}
             achievement={specificData.achievement}

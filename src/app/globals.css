@@ -40,7 +40,6 @@ body{
 
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 
 
@@ -132,8 +131,7 @@ canvas {
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
-
-      padding: 1rem 2.5rem;
+  padding: 1rem 2.5rem;
   color: #121516;
   background-color: #ffffff;
   border-radius: 1rem;
@@ -263,39 +261,6 @@ canvas {
   height: auto;
 }
 
-
-.exp_ul{
-  list-style: none;
-  /* border: 2px solid red; */
-  margin: 1.5rem 1rem;
-  text-align: left;
-}
-
-.exp_ul>li{
-  color:#cbdff8;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 1rem 0 0.5rem 0;
-}
-
-.exp_ul>span>button{
-  color: #000000;
-  padding: 0.25rem 0.5rem;
-  border-radius: 10rem;
-  border: 1px solid black;
-  background-color:  white
-
-}
-
-.exp_ul>span>a{
-  color: #000000;
-  padding: 0.5rem 0.75rem;
-  border-radius: 10rem;
-  border: 1px solid black;
-  background-color: white;
-  /* background-color:  #cbdff8; */
-}
-
 .cards_component{
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,116,139,1) 100%, rgba(255,255,255,1) 100%);
@@ -367,4 +332,13 @@ opacity: 0.2;
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: 2;
+}
+
+
+.rc-accordion-title{
+  color: #b3ceee;
+}
+
+.rc-accordion-toggle.active .rc-accordion-title{
+  color: #fff;
 }

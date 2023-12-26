@@ -60,8 +60,7 @@ const faqs = [
         text: <div className='flex flex-col [&>*]:mb-[1rem] [&>*]:flex [&>*]:items-center'>
         <Link href='/explore/web-technologies/frontend-development' ><span><Image width={200} height={200} className='h-[3rem] w-[3rem] rounded-[2rem] mr-[1rem]' src={FrontendDevelopment} alt='Skill Logo' /></span>Frontend Development</Link>
 
-        <Link href='/explore/web-technologies/backend-development' ><span><Image width={200} height={200} className='h-[3rem] w-[3rem] rounded-
-        [2rem] mr-[1rem]' src={BackendDevelopment} alt='Skill Logo' /></span>Backend Development</Link>
+        <Link href='/explore/web-technologies/backend-development' ><span><Image width={200} height={200} className='h-[3rem] w-[3rem] rounded-[2rem] mr-[1rem]' src={BackendDevelopment} alt='Skill Logo' /></span>Backend Development</Link>
         
         <Link href='/explore/web-technologies/ai-ml' ><span><Image width={200} height={200} className='h-[3rem] w-[3rem] rounded-[2rem] mr-[1rem]' src={AIML} alt='Skill Logo' /></span>AI / ML</Link>
         
