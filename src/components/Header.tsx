@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div>
       <header>
-        <nav className='mx-[2%] my-0 mb-[4rem] py-8 flex justify-start items-center text-white text-[1.1rem] gap-14'>
+        <nav className='mx-[2%] my-0 mb-[4rem] py-8 flex justify-start items-center text-white text-[1.1rem] gap-14 sm:block hidden'>
             <Link className='ml-[5rem] my-0 mr-auto' href='/'><Image alt='' src={NameHead} className='w-52' /></Link>
             <Link className='' href='/vision'>Vision</Link>
             <Link className='' href='/explore'>Explore</Link>

@@ -6,7 +6,7 @@ import ConnectGithub from '../../public/conect-github.png'
 
 const DevCards = (props: any) => {
   return (
-      <div className="bg-[#121516] pb-[3rem] rounded-[2rem] w-[35%] h-auto max-w-[450px] dev_cont">
+      <div className="bg-[#121516] pb-[3rem] rounded-[2rem] sm:w-[35%] w-full h-auto max-w-[450px] dev_cont">
                 <Image src={User2} alt='' className='mx-auto my-[2.5rem] w-[50%]' />
                 <h1 className='text-[2rem] font-bold'>{props.name}</h1>
                 <h2 className='mx-0 my-0 mt-[1rem] text-[1.3rem] font-medium text-[#949494]'>{props.skill}</h2>

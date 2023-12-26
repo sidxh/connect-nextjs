@@ -219,7 +219,7 @@ const DetailSidebar = () => {
                 <div>
                     <div>
                         <div className="text-[1rem] overflow-hidden mx-[1rem] my-[2rem]">
-                            <div className="w-[25vw]">
+                            <div className="sm:w-[25vw] w-full">
                               <h4 className="mb-[4rem] mx-0 mt-[0rem] text-[2rem] text-white text-center font-bold">Navigation</h4>
                                 {faqs.map((faq, index) => {
                                      return (

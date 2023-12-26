@@ -5,7 +5,7 @@ import SkillLayout from './layout';
 
 const SkillPage = () => {
   return (
-      <div className='flex justify-around mb-[10rem]'>
+      <div className='flex justify-around mb-[10rem] sm:flex-row flex-col'>
         <DetailedSidebar />
         <CardsSet />
       </div>

@@ -3,7 +3,7 @@ import Carousel from '@/components/Carousel'
 
 export default function Core() {
   return(
-    <section className="max-w-[1200px] text-center mx-auto">
+    <section className="max-w-[1200px] px-[4rem] sm:px-0 text-center mx-auto">
     <Carousel  
     title="Core Domains" 
     img1="3d-printing.png"

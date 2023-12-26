@@ -12,18 +12,18 @@ export default function Home() {
 //     loadFull(main);
 // }, [])
     return (
-      <div className="absolute top-0 left-0 w-full h-full landing">
+      <div className="absolute top-0 left-0 h-full landing w-[100vh] sm:w-full ">
             {/* <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/> */}
-            <div className='flex flex-col mx-[22vw] my-[28vh] p-[2rem]'>
+            <div className='flex flex-col mx-[10vw] sm:mx-[22vw] my-[40vh] sm:my-[28vh] sm:p-[2rem] items-center '>
               <div className='flex items-center'>
-                <Image alt='' src={Logos} className='w-[11rem]' />
+                <Image alt='' src={Logos} className='w-[4rem] sm:w-[11rem]' />
             {/* <img className="logos" src={require('../logos.png')} alt='' /> */}
           <div className="flex flex-col text-white">
-              <h1 className='main-text-h1 font-semibold text-[96px]'>ConnectLNM</h1>
-              <p className='ml-[3%] text-[#949494] text-[25px]' id="landing-p-desk">Upskill By Harnessing the Power of Community!</p>
+              <h1 className='main-text-h1 font-semibold sm:text-[96px] sm:block text-[32px]'>ConnectLNM</h1>
+              <p className='ml-[3%] text-[#949494] text-[25px] sm:block hidden' id="landing-p-desk">Upskill By Harnessing the Power of Community!</p>
         </div>
     </div>
-    <p className="hidden">Upskill By Harnessing the Power of Community!</p>
+    <p className="sm:hidden text-[0.7rem] text-[#949494]">Upskill By Harnessing the Power of Community!</p>
     </div>
     <Link id="landing-btn" href="/vision">Get Started</Link>         
       </div>

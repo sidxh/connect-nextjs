@@ -154,7 +154,7 @@ canvas {
 #landing-btn:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
-}
+} 
 
 .dev_cont{
   box-shadow: rgb(255, 255, 255) 0px 2px 4px, rgba(255, 255, 255, 0.87) 0px 7px 13px -3px, rgba(255, 255, 255, 0.951) 0px -3px 0px inset;

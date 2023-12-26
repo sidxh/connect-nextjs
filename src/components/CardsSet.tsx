@@ -105,7 +105,7 @@ const CardsSet = () => {
   return (
     <div className='text-center mb-[3rem] mx-0'>
       <h1 className='text-[2rem] font-bold mb-[3rem]'>{formatSkillName(firstSkill.skill)}</h1>
-      <div className='grid grid-cols-3 gap-[2rem] w-[70vw] p-[2rem]'>
+      <div className='grid sm:grid-cols-3 grid-cols-1 gap-[2rem] sm:w-[70vw] w-full p-[2rem]'>
         {specificData.map((specificData, index) => (
           <Cards
             key={index}

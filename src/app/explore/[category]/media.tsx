@@ -3,7 +3,7 @@ import Carousel from '@/components/Carousel'
 
 export default function Media() {
   return(
-    <section className="max-w-[1200px] text-center mx-auto">
+    <section className="max-w-[1200px] px-[4rem] sm:px-0 text-center mx-auto">
     <Carousel 
     title="Media & Design" 
     img1="ui-ux.png"

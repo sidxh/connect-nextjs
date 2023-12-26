@@ -13,7 +13,7 @@ const Cards = (props:any) => {
   };
 
   return (
-    <div className="rounded-[2rem] flex flex-col justify-around text-[#ecfee8] hover:scale-[1.05] cards_component">
+    <div className="rounded-[2rem] flex flex-col justify-around text-[#ecfee8] hover:scale-[1.05] cards_component flex-wrap">
       <h1 className='text-[1.5rem] mt-[2rem] text-center'>{props.name}</h1>
       <p className='text-[1rem] mb-[2rem] mt-[0.75rem] text-center text-[#cbdff8]'>{props.skill}</p>
       <div className="flex justify-around [&>*]:text-[1rem] ">

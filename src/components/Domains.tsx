@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Domains() {
   return (
     <div className='my-[10rem] mb-0'>
-        <nav className='mx-auto my-0 mb-[4rem] py-8 flex justify-center items-center text-white text-[1.2rem] gap-14'>
+        <nav className='mx-auto my-0 mb-[4rem] py-8 flex flex-wrap  justify-center items-center text-white text-[1.2rem] sm:gap-14 gap-10'>
             <Link className='' href='/explore/web-tech'>Web Technologies</Link>
             <Link className='' href='/explore/nontech'>Non-Technical</Link>
             <Link className='' href='/explore/core'>Core Domains</Link>
