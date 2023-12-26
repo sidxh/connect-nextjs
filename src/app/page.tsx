@@ -14,12 +14,12 @@ export default function Home() {
     return (
       <div className="absolute top-0 left-0 landing w-[100vw] sm:w-full ">
             {/* <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/> */}
-            <div className='flex flex-col mx-[10vw] sm:mx-[22vw] my-[42vh] sm:my-[28vh] sm:p-[2rem] items-center '>
+            <div className='flex flex-col mx-[10vw] sm:mx-[22vw] my-[45vh] sm:my-[28vh] sm:p-[2rem] items-center '>
               <div className='flex items-center'>
-                <Image alt='' src={Logos} className='w-[4rem] sm:w-[11rem]' />
+                <Image alt='' src={Logos} className='w-[3rem] sm:w-[11rem]' />
             {/* <img className="logos" src={require('../logos.png')} alt='' /> */}
           <div className="flex flex-col text-white">
-              <h1 className='main-text-h1 font-semibold sm:text-[96px] sm:block text-[32px]'>ConnectLNM</h1>
+              <h1 className='main-text-h1 font-semibold sm:text-[96px] sm:block text-[36px]'>ConnectLNM</h1>
               <p className='ml-[3%] text-[#949494] text-[25px] sm:block hidden' id="landing-p-desk">Upskill By Harnessing the Power of Community!</p>
         </div>
     </div>
