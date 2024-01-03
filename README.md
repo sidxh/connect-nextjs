@@ -25,6 +25,8 @@ At our university, we've identified a significant gap between junior and senior/
 
 ![Domains Preview](https://i.postimg.cc/C51Z1s5S/image-2023-11-14-02-02-19.png)
 
+![MVP Preview](https://i.postimg.cc/KzRBXN1s/preview.png)
+
 ## Tech Stack
 
 ConnectLNM is built using the following technologies:
