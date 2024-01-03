@@ -25,7 +25,11 @@ At our university, we've identified a significant gap between junior and senior/
 
 ![Domains Preview](https://i.postimg.cc/C51Z1s5S/image-2023-11-14-02-02-19.png)
 
+Explore our skill carousel for an interactive journey! Click on a skill, and you'll be taken to a special page featuring experienced alumni and seniors in that field. Learn about their achievements and experiences. Our platform isn't just for knowledge; it's for making connections. Discover how to reach out and connect with these experts directly.
+
 ![MVP Preview](https://i.postimg.cc/KzRBXN1s/preview.png)
+
+ConnectLNM is all about building connections and sharing knowledge. Explore skills, learn from experts, and create valuable connections that can enhance your academic and professional journey. Join us in creating a community where learning and collaboration go hand in hand!
 
 ## Tech Stack
 
